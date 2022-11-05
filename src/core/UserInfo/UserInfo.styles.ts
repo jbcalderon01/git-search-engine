@@ -8,8 +8,9 @@ export const UserInfoWrapper = styled.div`
     display: grid;
     grid-template-columns: 270px 1fr;
     gap: 1rem;
+    max-width: 100vw;
     @media (max-width: 670px) {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 `
 export const BoxBasicInfo = styled.div`

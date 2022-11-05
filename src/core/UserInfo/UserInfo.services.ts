@@ -162,15 +162,15 @@ export const getUserService = async (username: string): Promise<User> => {
     const url = `https://api.github.com/users/${username}`
 
     const userResponse = await fetch(url, {
-        cache: 'no-cache',
+        cache: 'default',
     })
 
     const userRepositories = await fetch(`${url}/repos`, {
-        cache: 'no-cache',
+        cache: 'default',
     })
 
     const userOrganizations = await fetch(`${url}/orgs`, {
-        cache: 'no-cache',
+        cache: 'default',
     })
 
     const dataUser = await userResponse.json()
